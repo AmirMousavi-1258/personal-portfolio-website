@@ -20,10 +20,9 @@ button.addEventListener('click',()=>{
         document.getElementById("Skill").style.color = color[0];
         document.getElementById("Fh2").style.backgroundColor = color[1];
         document.getElementById("Fh2").style.color = color[0];
-        document.getElementById("email").style.backgroundColor = color[1];
-        document.getElementById("phonenumber").style.backgroundColor = color[1];
         document.querySelectorAll('a').forEach(element,()=>{
-            element.classList.toggle('dark-mode');
+             element.style.backgroundColor = color[1];
+             element.style.color = color[0];
         })
 
     }
@@ -43,8 +42,6 @@ button.addEventListener('click',()=>{
         document.getElementById("Skill").style.color = color[1];
         document.getElementById("Fh2").style.backgroundColor = color[0];
         document.getElementById("Fh2").style.color = color[1];
-        document.getElementById("email").style.backgroundColor = color[0];
-        document.getElementById("phonenumber").style.backgroundColor = color[0];
         document.querySelectorAll('a').forEach(element => {
             element.style.color = color[1];
             element.addEventListener('mouseenter',()=>{
